@@ -25,7 +25,7 @@ public class Application {
             return "{" +
                     "\"time\": \"" + LocalDateTime.now().toString() + "\"" +
                      "," +
-                    "\"time\": \"" + LocalDateTime.now().toString() + "\"" +
+                    "\"somevalue\": \"some-random-value\"" +
                     "}";
 
         }
