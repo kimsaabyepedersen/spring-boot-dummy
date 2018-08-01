@@ -19,10 +19,14 @@ public class Application {
     @RestController
     class TimeController {
 
-        @GetMapping (path = "/",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+        @GetMapping(path = "/", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
         String getTime() {
 
-            return "{\"time\": \"" + LocalDateTime.now().toString() + "\"}";
+            return "{" +
+                    "\"time\": \"" + LocalDateTime.now().toString() + "\"" +
+                     "," +
+                    "\"time\": \"" + LocalDateTime.now().toString() + "\"" +
+                    "}";
 
         }
 
