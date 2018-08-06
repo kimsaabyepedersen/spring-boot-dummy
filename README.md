@@ -24,3 +24,8 @@ _Enable this flag if you want to build Docker images or want your builds to get 
  
  ### ..when setting up ECS
  * When configuring the service, make sure you under ``Configure network`` select ``ENABLED`` under ``Auto-assign public IP``. If you don't do this your ECS can't pull your image from ECR. Another way is to use a NAT Gateway.
+ 
+ ## Run the image locally
+ Build it: `docker build -t spring .`
+ 
+ Run it: `docker container run --rm -p 9090:8080 spring`
