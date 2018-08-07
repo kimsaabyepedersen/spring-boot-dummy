@@ -6,7 +6,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @SpringBootApplication
@@ -24,12 +23,12 @@ public class Application {
 
             return "{" +
                     "\"time\": \"" + LocalDateTime.now().toString() + "\"" +
-                     "," +
-                    "\"somevalue\": \"some-random-value\"" +
+                    "," +
+                    "\"somevalue\": \"some-randooom-value\"" +
                     "}";
 
         }
 
-
     }
+
 }
